@@ -1,0 +1,1878 @@
+<!-- 02-maths/01-calculator-one/index.html - 2.1: calculatrice -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+    <!-- <script src="assets/lib/utils.js"></script>
+    <script src="assets/lib/callbacks.js"></script> -->
+    <!-- <script src="/assets/js/app.js"></script> -->
+    <script defer src="/assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>2.1</span>
+          <strong>Calculator</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>Correct the script to make the calculator work.</p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="op-one">Operand one:</label>
+              <input type="text" name="op-one" id="op-one" />
+            </div>
+            <div class="field">
+              <label for="op-two">Operand two:</label>
+              <input type="text" name="op-two" id="op-two" />
+            </div>
+            <div class="actions">
+              <button class="operator" type="button" id="addition">+</button>
+              <button class="operator" type="button" id="substraction">
+                -
+              </button>
+              <button class="operator" type="button" id="multiplication">
+                ×
+              </button>
+              <button class="operator" type="button" id="division">÷</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>2.3</span>
+          <strong>squares and pairs</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            On click on the button, calculate and display the square numbers
+            between 1 and 21.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">run the script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>2.4</span>
+          <strong>Sorting the numbers</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            On click to the button, get the numbers displayed in the input, and
+            display them sorted in ascending order.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="numbers">Numbers to sort:</label>
+              <input
+                type="text"
+                name="numbers"
+                id="numbers"
+                readonly
+                value="2, 4, 14, 10, 90, 23, 16"
+              />
+            </div>
+            <div class="actions">
+              <button type="button" id="run">Run the script</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>2.5</span>
+          <strong>Factorial</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, get the number in the input, and show its
+            factorial.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="number">Number:</label>
+              <input type="text" name="number" id="number" />
+            </div>
+            <div class="actions">
+              <button type="button" id="run">Run the script</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>3.1</span>
+          <strong>background color (1)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            For each button, when clicked change the background color of the
+            page to the one indicated.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="red" onclick="red()">Red</button>
+            <button type="button" id="green" onclick="green()">Green</button>
+            <button type="button" id="yellow" onclick="yellow()">Yellow</button>
+            <button type="button" id="blue" onclick="blue()">Blue</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>3.2</span>
+          <strong>background color (2)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, get the value of the input and use it as
+            the background color for the page.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="color">Color:</label>
+              <input type="text" name="color" id="color" />
+            </div>
+            <div class="actions">
+              <button type="button" id="run" onclick="colors()">
+                Run the script
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!--  <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>3.3</span>
+          <strong>background color (3)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, generate a random color code and use that
+            color as the background for the page.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">Run the script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>4.1</span>
+          <strong>text according to the hour</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            change the content of the tag by <em>Hello</em> (if it's before
+            18h), or by <em>Good evening</em>.
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">Change me !</p>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>4.3</span>
+          <strong>Calculate the age</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            On the click to the button, get the birthdate of the visitor and
+            display his/her age.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field dob">
+              <label for="dob-day">Day:</label>
+              <select name="dob-day" id="dob-day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+            <div class="field dob">
+              <label for="dob-month">Month:</label>
+              <select name="dob-month" id="dob-month">
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">Mei</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">Décember</option>
+              </select>
+            </div>
+            <div class="field dob">
+              <label for="dob-year">Year:</label>
+              <select name="dob-year" id="dob-year">
+                <option value="1955">1955</option>
+                <option value="1956">1956</option>
+                <option value="1957">1957</option>
+                <option value="1958">1958</option>
+                <option value="1959">1959</option>
+                <option value="1960">1960</option>
+                <option value="1961">1961</option>
+                <option value="1962">1962</option>
+                <option value="1963">1963</option>
+                <option value="1964">1964</option>
+                <option value="1965">1965</option>
+                <option value="1966">1966</option>
+                <option value="1967">1967</option>
+                <option value="1968">1968</option>
+                <option value="1969">1969</option>
+                <option value="1970">1970</option>
+                <option value="1971">1971</option>
+                <option value="1972">1972</option>
+                <option value="1973">1973</option>
+                <option value="1974">1974</option>
+                <option value="1975">1975</option>
+                <option value="1976">1976</option>
+                <option value="1977">1977</option>
+                <option value="1978">1978</option>
+                <option value="1979">1979</option>
+                <option value="1980">1980</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+                <option value="1986">1986</option>
+                <option value="1987">1987</option>
+                <option value="1988">1988</option>
+                <option value="1989">1989</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+              </select>
+            </div>
+            <div class="actions">
+              <button type="button" id="run" onclick="age()">
+                Run the script
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!--  <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>4.4</span>
+          <strong>textual date</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Change the content of the indicated tag by the date of today, in
+            English (ex : Sunday 28 October 2018, 23h32).
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">Change me !</p>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>4.5</span>
+          <strong>calculate the friday 13</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, display each month of the specified year
+            that has a Friday 13th.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="year">Year:</label>
+              <input type="text" name="year" id="year" />
+            </div>
+            <div class="actions">
+              <button type="button" id="run" onclick="spook()">
+                Run the script
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.1</span>
+          <strong>item in array</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, display the fourth item from the array
+            <strong>fruits</strong> in the console.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="display()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.2 && 5.3</span>
+          <strong>manipulate array </strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, do the following transformations to the
+            array <strong>fruits</strong>: remove the first and the last
+            element, add an element "banana" at the start of the array, and add
+            an element "kiwi" at the end.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="display()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.4</span>
+          <strong>walk through the list (2)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, display on the console, one after the
+            other, each value of the array <strong>fruits</strong>. Use the
+            <em>forEach method</em>.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="display()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.5</span>
+          <strong>walk trough an array (3)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, display on the console, one after the
+            other, the name of each person in the array <strong>people</strong>.
+            Use the <em>forEach method</em>.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="display()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.6</span>
+          <strong>find in the array</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, display in the console the mail adress of
+            the person in the array <strong>people</strong> whose lastname is
+            "Dupont" and firstname is "Jean". Then display his <em>index</em> in
+            this array.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="find()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.7</span>
+          <strong>filter an array</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, create a new array from the array
+            <strong>people</strong>, containing only the people whose
+            <em>age is more than 18 years</em>. Display the resulting array in
+            the console.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="filter()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.8</span>
+
+          <strong>presence in an array</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, log in the console if, yes or no, there
+            is an <em>apple</em> in the array <strong>fruits</strong>.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="find()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.9</span>
+          <strong>random arrays and statistics</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, display the ten elements of an array of
+            10 numbers (between 1 and 100) in the table. Then display in the
+            definition list: the smallest number, the biggest number, the sum of
+            all numbers, and their average.
+          </p>
+        </article>
+        <section class="material">
+          <table>
+            <tr>
+              <td id="n-1">-</td>
+              <td id="n-2">-</td>
+              <td id="n-3">-</td>
+              <td id="n-4">-</td>
+              <td id="n-5">-</td>
+              <td id="n-6">-</td>
+              <td id="n-7">-</td>
+              <td id="n-8">-</td>
+              <td id="n-9">-</td>
+              <td id="n-10">-</td>
+            </tr>
+          </table>
+          <dl>
+            <dt>the smallest number:</dt>
+            <dd id="min">-</dd>
+            <dt>the biggest number:</dt>
+            <dd id="max">-</dd>
+            <dt>Sum of all numbers:</dt>
+            <dd id="sum">-</dd>
+            <dt>Average of all numbers:</dt>
+            <dd id="average">-</dd>
+          </dl>
+          <div class="actions">
+            <button type="button" id="run" onclick="start()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+          <h1>BeCode / JavaScript</h1>
+          <h2>
+              <span>5.10</span>
+              <strong>the use of reducer/strong>
+          </h2>
+      </header>
+      <main class="content">
+          <article class="explain">
+              <p>When you click the button, display (in the console ) the total of the persons' ages in the array 
+                  <strong>people</strong>. Use the <em>reduce method</em>.</p>
+          </article>
+          <section class="material">
+              <div class="actions">
+                  <button type="button" id="run" onclick="sumAge()">Run the script</button>
+              </div>
+          </section>
+      </main>
+  </div> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.11</span>
+          <strong>de-dupe the array </strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, remove the duplicates from the array
+            <strong>fruits</strong> and display the resulting array in the
+            console. Each value should be there one time, and one time only.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="duplicate()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.12</span>
+          <strong>Manipulation of a Set</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, operates the following transformations on
+            the Set <strong>fruits</strong> : remove the "apple" and the
+            "cherry", add a "banana" and a "kiwi".
+          </p>
+          <p>Finally, display the Set's result in the console.</p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="operates()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.13</span>
+          <strong>Find in a Set</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, display (in the console) the number of
+            the people in the Set <strong>people</strong>. Next, show if
+            <em>Alexandre</em> is part of the Set.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="find()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>5.14</span>
+          <strong>Bird names generator in French</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Au clic sur le bouton, affiche dans la balise prévue un nom d'oiseau
+            généré aléatoirement à partir des données du script.
+          </p>
+          <p>
+            Chaque nom est associé à une propriété qui vous permet de savoir si
+            vous devez accorder l'adjectif (ajoutez un "e" en fin de mot).
+          </p>
+          <p>
+            Examples de résultat : <em>La mouette chantante</em> ou
+            <em>Le corbeau huppé</em>.
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">Change-moi !</p>
+          <div class="actions">
+            <button type="button" id="run" onclick="run()">
+              Run the script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>6.1</span>
+          <strong>generate an object</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click on the button, displays in the console an object that
+            introduces you and contains the following properties
+            <em>lastname</em>, <em>firstname</em>, <em>age</em>, <em>city</em>,
+            <em>country</em>.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="display()">
+              Run script
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>6.2</span>
+          <strong>assign properties</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            In the script, I have an array <strong>computers</strong>, which
+            makes an inventory of the computers of a class, unfortunately, this
+            inventory is incomplete. So I created the object
+            <strong>defaultProps</strong>, which contains the necessary
+            properties and their default values.
+          </p>
+          <p>
+            When you click on the button, display in the console the contents of
+            the table <strong>computers</strong>, with, for each element, all
+            the necessary properties. <strong>Attention :</strong> if an element
+            already has a value for a property, do not overwrite it with the
+            default value!
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="run()">Run script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>6.3</span>
+          <strong>keys &amp; values</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Clicking on the button, display inside the console, a list of the
+            object's keys from <strong>person</strong>. Then, also displays the
+            list of values for the same object.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="run()">Run script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>6.4</span>
+          <strong>fromEntries</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            In the recent addition of javascript, the method
+            <strong>fromEntries</strong> allows us to create objects from an
+            array.
+          </p>
+          <p>
+            When the button is clicked, display in the console the
+            <strong>keys</strong> and <strong>values</strong> from an object
+            created by using the arrays .
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="run()">Run script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>7.1</span>
+          <strong>instances</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            In the script, there is a class defined, named:
+            <strong>Cat</strong>.
+          </p>
+          <p>
+            When the button is clicked, displays in the console two instances of
+            the class <strong>Cat</strong> : <em>Skitty</em>, 9 years and
+            <em>Pixel</em>, 6 years.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="run()">Run script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>7.2</span>
+          <strong>Methods</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Create a <strong>Person</strong> class. It will have two properties,
+            <strong>firstname</strong> and <strong>lastname</strong>, and
+            <em>method</em> <strong>sayHello</strong>, which will return "Hello,
+            [firstname] [lastname]!".
+          </p>
+          <p>
+            When the button is clicked, create an instance of the Person class
+            and return the value of the sayHello method inside the console.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="run()">Run script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>7.3</span>
+          <strong>inheritance</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            In the script, there is a prewritten class named:
+            <strong>Animal</strong>.
+          </p>
+          <p>
+            From this class, create the two classes, <strong>Cat</strong> and
+            <strong>Dog</strong>. They will each have two properties,
+            <strong>name</strong> and <strong>greeting</strong> (the second
+            property must be <em>static</em>).
+          </p>
+          <p>
+            When the button is clicked, create an instance of the Dog class and
+            an instance of the Cat class and display the return value of the
+            sayHello method inside the console .
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="run()">Run script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>7.4</span>
+          <strong>getter &amp; setter</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Create a class named <strong>Person</strong>. It will have two
+            properties, <strong>firstname</strong> and
+            <strong>lastname</strong>, as well as a <em>getter</em>
+            <strong>name</strong>, which will return "[firstname] [lastname]",
+            and a <em>setter</em> <strong>name</strong>, which will divide the
+            full name on the basis of a space: the first element will be the
+            firstname, the second the lastname.
+          </p>
+          <p>
+            When the button is clicked, we create an instance of the Person
+            class and display the value of the name inside the console, then
+            assigns a new value to it and displays the state of the instance
+            inside the console at the end of the process.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run" onclick="run()">Run script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!--  <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.1</span>
+          <strong>select by id</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Select the element with the id "target" and replace its content with
+            "owned".
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">Haha, you will never change me!</p>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.2</span>
+          <strong>select by css selector</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Select the element with the id "target" (not using getElementById!)
+            and replace its content with "owned".
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">Haha, you will never change me!</p>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.3</span>
+          <strong>select multiple elements by css selector</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Select the elements with the class "target" and replace their
+            content with "owned"
+          </p>
+        </article>
+        <section class="material">
+          <p class="target">Haha, vous ne me changerez jamais !</p>
+          <p class="target">Moi non plus !</p>
+          <p class="target">Pouvez toujours courir !</p>
+          <p class="target">Tel est owned qui croyant owner !</p>
+          <p class="target">Moi, j'm'en fous…</p>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.4</span>
+          <strong>manipulating attributes and creating elements</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Get the value of the "data-image" attribute from the element with id
+            "source". Create a new image element inside the target element that
+            displays the image referred to by the attribute value. Then remove
+            the original element.
+          </p>
+        </article>
+        <section class="material">
+          <span
+            id="source"
+            data-image="http://www.randomkittengenerator.com/cats/rotator.php"
+          ></span>
+          <figure id="target"></figure>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.5</span>
+          <strong>image hover</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When hovering over the image, change its source attribute to the
+            value specified in the "data-hover" attribute.
+          </p>
+        </article>
+        <section class="material">
+          <figure>
+            <img
+              src="../../_shared/img/kiss.svg"
+              alt="Kiss?"
+              data-hover="../../_shared/img/kiss-wink-heart.svg"
+            />
+          </figure>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.6</span>
+          <strong>mini carousel</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, change the source of the image to the
+            next one listed in the <strong>gallery</strong> array.
+          </p>
+        </article>
+        <section class="material">
+          <figure>
+            <img src="../../_shared/img/bell.svg" alt="Carousel" />
+          </figure>
+          <div class="actions">
+            <button type="button" id="next">Next image</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.7</span>
+          <strong>creating a table (1)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Inside the element with id "target", create an HTML table with 1
+            column and 10 rows.
+          </p>
+        </article>
+        <section class="material">
+          <div id="target"></div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.8</span>
+          <strong>creating a table (2)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Inside the element with id "target", create an HTML table with 10
+            columns and 10 rows, containing the tables of multiplication from 1
+            to 10.
+          </p>
+        </article>
+        <section class="material">
+          <div id="target"></div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.9</span>
+          <strong>password verification (1)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, check whether the two passwords entered
+            in the input fields are <em>exactly</em> the same. If they are not,
+            change the border color of the input boxes to be red.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="pass-one">Password:</label>
+              <input type="text" name="pass-one" id="pass-one" />
+            </div>
+            <div class="field">
+              <label for="pass-two">Re-enter password:</label>
+              <input type="text" name="pass-two" id="pass-two" />
+            </div>
+            <div class="actions">
+              <button type="button" id="run">Run the script</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.10</span>
+          <strong>password verification (2)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When you click the button, check whether the two passwords entered
+            in the input fields are <em>exactly</em>the same. If they are not,
+            add the class "error" to the input boxes.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="pass-one">Password:</label>
+              <input type="text" name="pass-one" id="pass-one" />
+            </div>
+            <div class="field">
+              <label for="pass-two">Re-enter password:</label>
+              <input type="text" name="pass-two" id="pass-two" />
+            </div>
+            <div class="actions">
+              <button type="button" id="run">Run the script</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.11</span>
+          <strong>change event (1)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Listen for changes in the input field and display the number of
+            characters entered in the counter span. As soon as 10 characters
+            have been entered, don't allow any more characters to be typed.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field with-indicator">
+              <label for="pass-one">Password:</label>
+              <input type="text" name="pass-one" id="pass-one" />
+              <span id="counter" class="indicator">0/10</span>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>8.12</span>
+          <strong>change event (2)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Listen for changes in the input field and display "ok" in the
+            validity span if the input is at least 8 characters long and
+            contains at least two numbers.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field with-indicator">
+              <label for="pass-one">Password:</label>
+              <input type="text" name="pass-one" id="pass-one" />
+              <span id="validity" class="indicator">Not ok</span>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!--  <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>9.1</span>
+          <strong>waving text</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Display some text inside the target element. Create a wave effect
+            using at least 5 different font sizes.
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">
+            Woo-hoo! I'm making waves! Wéééé! Oh ... I think I'm having
+            seasickness ...
+          </p>
+        </section>
+      </main>
+    </section>
+    -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>9.2</span>
+          <strong>typewriter effect</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Display some text inside the target element. Create a "typewriter"
+            effect by making each letter appear one after the other. Use a
+            random delay between each letter appearing.
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">
+            Je suis un texte qui va apparaître dans un effet "machine à écrire",
+            un peu comme dans les films noirs. Sauf que... je ne sais pas qui
+            est l'assassin ! Y en a-t-il vraiment un ? Habite-t-il au 21 ? Que
+            de mystères !
+          </p>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>9.3</span>
+          <strong>worst user interface (1) : phone slider</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            An exercise in creating the worst possible user interface for
+            dialing a phone number: use the value of the slider to show the
+            phone number (with a leading 0) in the target paragraph (from
+            0460000000 to 0499999999).
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">0460000000</p>
+          <form action="#" method="post">
+            <div class="field full">
+              <input
+                type="range"
+                min="460000000"
+                max="499999999"
+                value="460000000"
+                id="slider"
+                name="slider"
+              />
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>9.4</span>
+          <strong>worst user interface (2) : phone clicker</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Another exercise in creating the worst possible user interface for
+            dialing a phone number: every click increases the selected number.
+            Minimum and maximum values are as specified on each button by the
+            <em>data-min</em> and <em>data-max</em> attributes. Display the
+            number (with a leading 0) in the target paragraph.
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">+460000000</p>
+          <div class="actions">
+            <button type="button" id="part-one" data-min="460" data-max="499">
+              460
+            </button>
+            <button type="button" id="part-two" data-min="00" data-max="99">
+              00
+            </button>
+            <button type="button" id="part-three" data-min="00" data-max="99">
+              00
+            </button>
+            <button type="button" id="part-four" data-min="00" data-max="99">
+              00
+            </button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>9.5</span>
+          <strong>worst user interface (3) : phone slot</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            One more exercise in creating the worst possible user interface for
+            dialing a phone number: each set of numbers behaves as a slot
+            machine in the casino. When you click a button, a random value is
+            picked between the values specified by the <em>data-min</em> and
+            <em>data-max</em> attributes. Display the number (with a leading 0)
+            in the target paragraph.
+          </p>
+        </article>
+        <section class="material">
+          <p id="target">+460000000</p>
+          <form action="#" method="post">
+            <div class="field slot">
+              <input
+                type="text"
+                name="part-one"
+                id="part-one"
+                value="460"
+                data-min="460"
+                data-max="499"
+              />
+              <button type="button" id="fix-part-one">Stop</button>
+            </div>
+            <div class="field slot">
+              <input
+                type="text"
+                name="part-two"
+                id="part-two"
+                value="00"
+                data-min="00"
+                data-max="99"
+              />
+              <button type="button" id="fix-part-two">Stop</button>
+            </div>
+            <div class="field slot">
+              <input
+                type="text"
+                name="part-three"
+                id="part-three"
+                value="00"
+                data-min="00"
+                data-max="99"
+              />
+              <button type="button" id="fix-part-three">Stop</button>
+            </div>
+            <div class="field slot">
+              <input
+                type="text"
+                name="part-four"
+                id="part-four"
+                value="00"
+                data-min="00"
+                data-max="99"
+              />
+              <button type="button" id="fix-part-four">Stop</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>9.6</span>
+          <strong>guess the number</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            When the page is loaded, the script picks a number (X) between 1 and
+            100 and then asks the user to guess that number. For each guess, the
+            script responds "higher" or "lower" if X is higher - or lower - than
+            the user's guess, or "that's it!" when the guess is correct, as well
+            as "you needed Y guesses" (where Y is the number of guesses).
+          </p>
+        </article>
+      </main>
+    </section> -->
+    <!-- <main class="content">
+      <article class="explain">
+          <p>When you click the button, increment the counter by 1 and display the new value in the target
+              paragraph. Use <strong>localStorage</strong> to save the counter, and to read the counter value (and
+              display it) when the page is reloaded.</p>
+      </article>
+      <section class="material">
+          <p id="target" class="counter">0</p>
+          <div class="actions">
+              <button type="button" id="increment">Increment and store</button>
+          </div>
+      </section>
+  </main>
+</section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>10.0</span>
+          <strong>exemple d'asynchronicité</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            La notion d'<em>asynchronicité</em> en JavaScript est un concept
+            incontournable malheureusement assez mal compris par les débutants.
+          </p>
+          <p>
+            On peut raisonnablement avancer qu'en comprendre les principes est
+            un jalon important de l'apprentissage de JavaScript.
+          </p>
+          <p>
+            Afin de mieux vous rendre compte du concept d'asynchronicité, je
+            vous invite à étudier le code du script de cet exemple, puis de
+            l'exécuter en cliquant sur le bouton ci-dessous, et d'observer ce
+            qui s'affiche dans la console.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">Lancer le script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!--  <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>10.1</span>
+          <strong>chargement d'articles</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            La fonction <strong>window.lib.getPosts()</strong> est disponible
+            dans le script. Elle doit recevoir un callback en paramètre. Après
+            un petit délai, le callback sera exécuté avec deux paramètres : le
+            premier contient une erreur (s'il y en a une, sinon <em>null</em>),
+            le second un tableau d'articles.
+          </p>
+          <p>
+            Au clic sur le bouton, appelle la fonction getPosts et affiche les
+            articles obtenus dans la console (la fonction getPosts ne retourne
+            jamais d'erreur).
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">Lancer le script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>10.2</span>
+          <strong>chargement d'articles et de commentaires</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Tu as dû remarquer, dans l'exercice précédent, que les articles
+            reçus via la fonction
+            <strong>window.lib.getPosts</strong> comprennaient une propriété
+            <strong>id</strong>.
+          </p>
+          <p>
+            La fonction <strong>window.lib.getComments()</strong> est disponible
+            dans le script. Elle doit recevoir un id d'article comme premier
+            paramètre, ainsi qu'un callback en second paramètre. Après un petit
+            délai, le callback sera exécuté avec deux paramètres : le premier
+            contient une erreur (s'il y en a une, sinon <em>null</em>), le
+            second un tableau des commentaires de l'article.
+          </p>
+          <p>
+            Au clic sur le bouton, appelle la fonction getPosts. Pour chaque
+            article récupéré, appelle la fonction getComments et ajoute les
+            commentaires obtenus dans une propriété <em>comments</em> de
+            l'article. Affiche les articles dans la console (les fonctions
+            getPosts et getComments ne retournent jamais d'erreur).
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">Lancer le script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>10.3</span>
+          <strong>gestion d'erreur</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            La fonction <strong>window.lib.getPersons()</strong> est disponible
+            dans le script. Elle doit recevoir un callback en paramètre. Après
+            un petit délai, le callback sera exécuté avec deux paramètres : le
+            premier contient une erreur (s'il y en a une, sinon <em>null</em>),
+            le second un tableau de personnes.
+          </p>
+          <p>
+            Au clic sur le bouton, appelle la fonction getPersons et affiche le
+            resultat obtenus dans la console. <strong>Attention :</strong> la
+            fonction getPersons a plus ou moins une chance sur deux de générer
+            une erreur. Si c'est le cas, utilise <em>console.error()</em> pour
+            l'afficher.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">Lancer le script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>10.4</span>
+          <strong>chargement d'articles (Promise)</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            La fonction <strong>window.lib.getPosts()</strong> est disponible
+            dans le script. Elle retourne une Promise qui sera résolue, après un
+            petit délai, avec un tableau d'articles.
+          </p>
+          <p>
+            Au clic sur le bouton, appelle la fonction getPosts et affiche les
+            articles obtenus dans la console (la fonction getPosts sera toujours
+            résolue sans erreur).
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">Lancer le script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!-- 
+      ///////////////////////////////////////10/04, 05 ,06, 07, 08, 09 Already done//////////////////////////////////////
+     -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>11.1</span>
+          <strong>liste vers console</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Une fois l'API REST d'exercice lancée (réfères-toi au README), tu
+            peux y accéder à l'adresse <strong>http://localhost:3000</strong>.
+          </p>
+          <p>
+            Cette petite API suit les préceptes REST, et contient, sous le
+            chemin <strong>/heroes</strong>, des données concernant les
+            <em>X-Men</em>.
+          </p>
+          <p>
+            Au clic sur le bouton, utilise la fonction
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+              >fetch</a
+            >
+            et en suivant l'architecture REST, récupère la liste des X-Men et
+            affiche-la dans la console.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">Lancer le script</button>
+          </div>
+        </section>
+      </main>
+    </section> -->
+    <!--  <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>11.2</span>
+          <strong>liste vers template</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Au clic sur le bouton, utilise la fonction
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+              >fetch</a
+            >, récupère la liste des X-Men et affiche-la dans la balise dont
+            l'id est "target". Utilise la balise <strong>template</strong> pour
+            reproduire une structure html pour chaque héros.
+          </p>
+        </article>
+        <section class="material">
+          <div class="actions">
+            <button type="button" id="run">Lancer le script</button>
+          </div>
+          <template id="tpl-hero">
+            <li class="hero">
+              <h4 class="title">
+                <strong class="name"></strong>
+                <em class="alter-ego"></em>
+              </h4>
+              <p class="powers"></p>
+            </li>
+          </template>
+          <ol id="target"></ol>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>11.3</span>
+          <strong>details</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Au clic sur le bouton, récupère l'id dans le formulaire, puis
+            récupère le X-Men correspondant dans l'API et affiche-le dans la
+            balise dont l'id est "target". Utilise la balise
+            <strong>template</strong> pour reproduire une structure html
+            adéquate.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="hero-id">Id du héro:</label>
+              <input type="text" name="hero-id" id="hero-id" />
+            </div>
+            <div class="actions">
+              <button type="button" id="run">Lancer le script</button>
+            </div>
+          </form>
+          <template id="tpl-hero">
+            <li class="hero">
+              <h4 class="title">
+                <strong class="name"></strong>
+                <em class="alter-ego"></em>
+              </h4>
+              <p class="powers"></p>
+            </li>
+          </template>
+          <ol id="target"></ol>
+        </section>
+      </main>
+    </section> -->
+    <!-- <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>11.4</span>
+          <strong>ajouter un élément</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Au clic sur le bouton, récupère les valeurs du formulaire et créé le
+            nouveau héro dans l'API.<br />Chaque champs doit être rempli (à toi
+            de gérer).
+          </p>
+          <p>Affiche le résultat de ta requête dans la console.</p>
+          <p>
+            <strong>Attention :</strong> les pouvoirs doivent être stockés sous
+            forme d'un tableau !
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field dob">
+              <label for="hero-name">Nom:</label>
+              <input type="text" name="name" id="hero-name" />
+            </div>
+            <div class="field dob">
+              <label for="hero-alter-ego">Alter-Ego:</label>
+              <input type="text" name="alter-ego" id="hero-alter-ego" />
+            </div>
+            <div class="field dob">
+              <label for="hero-powers">Pouvoirs:</label>
+              <input type="text" name="powers" id="hero-powers" />
+            </div>
+            <div class="actions">
+              <button type="button" id="run">Lancer le script</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section> -->
+    <section class="container">
+      <header>
+        <h1>BeCode / JavaScript</h1>
+        <h2>
+          <span>11.5</span>
+          <strong>supprimer un élément</strong>
+        </h2>
+      </header>
+      <main class="content">
+        <article class="explain">
+          <p>
+            Au clic sur le bouton, récupère l'id dans le formulaire, puis
+            supprime le X-Men correspondant dans l'API et affiche le résultat de
+            ta requête dans la console.
+          </p>
+        </article>
+        <section class="material">
+          <form action="#" method="post">
+            <div class="field">
+              <label for="hero-id">Id du héro:</label>
+              <input type="text" name="hero-id" id="hero-id" />
+            </div>
+            <div class="actions">
+              <button type="button" id="run">Lancer le script</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>
